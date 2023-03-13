@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+    <title>Задание 1</title>
+</head>
+<body>
+   <header>
+       <h1>Поиск врачей в поликлинике</h1>
+   </header>
+   <main>
+       <form action="#">
+           <div>
+                <input required minlength="2" type="text" placeholder="Поиск врача">
+            <div> 
+                <h3> Фильтр для поиска врача</h3>
+                <p> К какому врачу вы хотите попасть?
+                    <select>
+                        <option value="">Беспалтному</option>
+                        <option value="">Платному</option>
+                    </select>
+                </p>
+                    <p>Начало приема пациентов
+                        <select>
+                            <option value="">9:00</option>
+                            <option value="">10:00</option>
+                            <option value="">11:00</option>
+                            <option value="">12:00</option>
+                        </select>
+                    </p>
+                    <p>Стаж работы врача
+                        <select>
+                            <option value="">5 лет</option>
+                            <option value="">10 лет</option>
+                            <option value="">15 лет</option>
+                            <option value="">20 лет</option>
+                        </select>
+                   </p>
+                <p>Тип приема пациентов<br />
+                    <input type="radio" name="type" >  По предварительной записи<br />
+                    <input type="radio" name="type" > По живой очереди<br />
+                    <input type="radio" name="type"  > По талоном<br />
+                </p>
+            </div>
+           <button type="submit">Записаться к врачу</button>
+       </form>
+   </main>
+</body>
+</html>
