@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"  href="main.css">
+    <title>Resume</title>
+</head>
+<body>
+    <div class="container">
+    <!-- Page1 Главная-->
+        <div class="page1" id = 'page01' >
+            <div class="bt">
+                <img src="/img/Group 10.svg" alt="Кнопка" id="img1">
+                <button  class="btn" onclick="document.getElementById('page01').style.display='none'; document.getElementById('page03').style.display='block';"></button>
+            </div>
+
+            <div class="image">
+                <p></p>
+                <p><img src="/img/Group 4.svg" alt="Я" id="img"></p>
+            </div>
+            <div class="text123">
+                <p><h1>Полина Молодцова</h1>
+                <h2>Учащаяся Минского радиотехнического колледжа</h2><h3><i>группы 0К9291 3 курса</i></h3><h3>Специальность: Программируемые мобильные системы</h3></p>
+            </div>
+            <div class="btn22">
+                <button id="btn2" onclick="document.getElementById('page01').style.display='none'; document.getElementById('page02').style.display='block';">Подробнее</button>
+            </div>
+        </div>
+
+    <!-- Page2 Подробнее-->
+        <div class="page02" id = 'page02' style='display: none'>
+            <div class="bt">
+                <img src="/img/Group 9.svg" alt="Кнопка" id="img1">
+                <button class="btn" onclick="document.getElementById('page02').style.display='none'; document.getElementById('page01').style.display='block';"></button>
+            </div>
+            <div class="image">
+                <p></p>
+                <p><img src="/img/Group 4.svg" alt="Я" id="img"></p>
+            </div>
+            <div class="text123">
+                <p><h1>Привет меня зовут Полина Молодцова!</h1>
+                <h2>Я хочу показать тебе свое резюме!</h2><h3>В нем ты можешь посмотреть мои проекты;</h3><h3>места, где я работала;</h3><h3>навыки, которыми я обладаю и контакты.</h3></p>
+            </div>
+            
+        </div>
+    
+    <!-- Page3 Меню-->
+        <div id = 'page03' style='display: none'>
+            <div class="bt">
+                <img src="/img/Group 9.svg" alt="Кнопка" id="img1">
+                <button  class="btn" onclick="document.getElementById('page03').style.display='none'; document.getElementById('page01').style.display='block';"></button>
+            </div>
+            <div class="text">
+                <p><a href = '#' onclick = "document.getElementById('page03').style.display='none'; document.getElementById('page04').style.display='block';"><h1>Работа</h1></a>
+                <p><a href = '#' onclick = "document.getElementById('page03').style.display='none'; document.getElementById('page05').style.display='block';"><h1>Проекты</h1></a>
+                <p><a href = '#' onclick = "document.getElementById('page03').style.display='none'; document.getElementById('page06').style.display='block';"><h1>Профессиональные навыки</h1></a>
+                <p><a href = '#' onclick = "document.getElementById('page03').style.display='none'; document.getElementById('page07').style.display='block';"><h1>Контакты</h1></a>
+            </div>
+            <div class="figure">
+                <p><img src="/img/Component 1.svg" alt="Фигуры" id="figure"></p>
+            </div>
+        </div>
+
+    <!-- Page4 Работа-->
+        <div id = 'page04' style='display: none'>
+            <div class="bt">
+                <img src="/img/Group 10.svg" alt="Кнопка" id="img1">
+                <button  class="btn" id="btn" onclick="document.getElementById('page04').style.display='none'; document.getElementById('page03').style.display='block';"></button>
+            </div>
+            <div class="lune"></div>
+            <div class="lest">
+                <p><h1>Работа</h1></p>
+            </div>
+            <div class="list">
+                <ul type="square">
+                    <li><h2>Маркетинг, ByteDance</h2><h3><i>20 мая 2020 года – настоящее время;</i></h3></li>
+                    <li><h2>Цифровой маркетинг, LimeRoad</h2><h3><i>19 апреля 2020 года – 19 сентябрь 2020 года;</i></h3></li>
+                    <li><h2>Контент-маркетинг, Udacity</h2><h3><i>18 июня 2019 года – 18 декабря 2019 года;</i></h3></li>
+                    <li><h2>Соучредитель, Entrinus</h2><h3><i>16 февраля 2018 года – 17 июля 2018 года.</i></h3></li>
+                </ul>
+            </div>
+        </div>
+
+    <!-- Page5 Проекты-->
+        <div id = 'page05' style='display: none'>
+            <div class="bt">
+                <img src="/img/Group 10.svg" alt="Кнопка" id="img1">
+                <button  class="btn" onclick="document.getElementById('page05').style.display='none'; document.getElementById('page03').style.display='block';"></button>
+            </div>
+            <div class="line"></div>
+            <div class="lest">
+                <p><h1>Проекты</h1></p>
+            </div>
+            <div class="list">
+                <ul type="square">
+                    <li><h2>Разработан веб-сайт Entrinus</h2><h3><i>выиграл национальную премию Enactus 2023;</i></h3></li>
+                    <li><h2>Dunzo UX Case Study</h2><h3><i>16 марта 2022 года;</i></h3></li>
+                    <li><h2>Разработана концепция для Snapchat</h2><h3><i>5 января 2021 года;</i></h3></li>
+                    <li><h2>Участие в работе для Spotify Marketing campaign</h2><h3><i>24 июня 2019 года;</i></h3></li>
+                    <li><h2>Ежедневное оформление залогов ByteDance</h2><h3><i>15 апреля 2018 года.</i></h3></li>
+                </ul>
+            </div>
+        </div>
+
+    <!-- Page6 Профессиональные навыки-->
+        <div id = 'page06' style='display: none'>
+            <div class="bt">
+                <img src="/img/Group 10.svg" alt="Кнопка" id="img1">
+                <button  class="btn" onclick="document.getElementById('page06').style.display='none'; document.getElementById('page03').style.display='block';"></button>
+            </div>
+            <div class="lest">
+                <p><h1>Профессиональные навыки</h1></p><p></p>
+            </div>
+            <div class="textcols">
+                <hr>
+                <table>
+                    <tr><td><b><i>Технические навыки:</i></b></td><td> Каркас;</td></tr>
+                    <tr><td></td><td> Прототипирование;</td></tr>
+                    <tr><td></td><td> Исследование пользователей;</td></tr>
+                    <tr><td></td><td> Маркетинг.</td></tr>
+                    <tr><td><b><i>Инструменты:</i></b></td><td> HTML;</td></tr>
+                    <tr><td></td><td> CSS;</td></tr>
+                    <tr><td></td><td> Illustrator;</td></tr>
+                    <tr><td></td><td> Figma;</td></tr>
+                    <tr><td></td><td> Sketch;</td></tr>
+                    <tr><td></td><td> Adobe XD;</td></tr>
+                    <tr><td></td><td> Final Cut Pro;</td></tr>
+                    <tr><td></td><td> Photoshop.</td></tr>
+                </table>
+            </div>
+        </div>
+
+    <!-- Page7 Контакты -->
+        <div id = 'page07' style='display: none'>
+            <div class="bt">
+                <img src="/img/Group 10.svg" alt="Кнопка" id="img1">
+                <button  class="btn" onclick="document.getElementById('page07').style.display='none'; document.getElementById('page03').style.display='block';"></button>
+            </div>
+            <div class="lest">
+                <p><h1>Контакты</h1></p>
+            </div>
+            <div class="contact">
+                <hr>
+                <p><h2>Почта:</h2>
+                <p><h2><i><a href="https://mail.ru/" target="_blank">polymolodtsova@gmail.com</a></i></h2></p>
+                <p><h2>GitHub:</h2>
+                <p><h2><i><a href="https://github.com/polinamolodtsova" target="_blank">polinamolodtsova</a></i></h2></p>
+                <p><h2>Instagram:</h2>
+                <p><h2><i><a href="https://instagram.com/polllissshka?igshid=MmJiY2I4NDBkZg==" target="_blank">polllissshka</a></i></h2></p>
+                <p><h2>Telegram:</h2>
+                <p><h2><i><a href="https://t.me/mrkchannelofficial" target="_blank">pollissshka</a></i></h2></p>
+            </div>
+            <div class="figure">
+                <p><img src="/img/Component 1.svg" alt="Фигуры" id="figure"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
