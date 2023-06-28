@@ -1,0 +1,277 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html , body{
+    background-color:wheat;
+    height:100%;
+}
+
+.container{
+  margin:0 auto;
+  max-width: 1600px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.bt{
+  height: 10em;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1.2em;
+}
+
+.btn{
+  max-width: 1600px;
+  position: absolute;
+  border: none; 
+  background-color: transparent;
+  border-radius: 90%;
+  left:0;
+  width: 40em;
+  height: 30em;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.image{
+  text-align: center;
+}
+
+.text123{
+  text-align: center;
+}
+
+#btn2{
+    font-size: 1.5em;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    background: transparent;
+    border: .2em solid blue;
+    transition: color 9999999s
+}
+
+#btn2:hover { 
+  background-color: rgb(62, 62, 249); 
+  }
+
+.textcols{
+    font-size: 2em;
+    table{
+    margin-left: 20px;
+    width:100%;
+    background:white;
+    color:black;
+    border-spacing: 1em;
+  }
+}
+
+.figure{
+    position:absolute;
+    bottom:0;
+    right:0
+}
+
+.contact {
+  line-height:2em;
+}
+
+.line , .lune{
+    border-left: solid blue;
+    /* height:50%; */
+    position: absolute;
+    margin-left: -3px;
+}
+
+.list{
+  font-size: 1.2em;
+  position: absolute;
+  margin-left: -3px;
+  line-height:2em;
+}
+
+/* .lest , .text , .contact , .textcols{ 
+  margin-left: 3%;
+} */
+
+/*Настройка линий, точек*/
+hr{
+  border: none; 
+  background-color: black; 
+  height: .05em;
+}
+
+li {
+  list-style-type: '👉';
+  padding-inline-start: 1ch;
+}
+
+/*Настройка ссылок*/
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+  }
+  
+  a:link {
+    color: blueviolet;
+  }
+  
+  a:visited {
+    color: black;
+  }
+  
+  a:focus {
+    border-bottom: 1px;
+    background: plum;
+  }
+  
+  a:hover {
+    border-bottom: 1px;
+    background:plum;
+  }
+  
+  a:active {
+    background: indigo;
+    color: blueviolet;
+  }
+
+  /*Разрешение экрана*/
+  @media screen and (orientation:landscape){
+    .container{
+      height:100%;
+      max-width:1600px;
+    }
+
+    .bt{
+      width:100%;
+      height:20%;
+    }
+
+    #img{
+      width: 15em;
+    }
+
+    #img1{
+      width:15em;
+    }
+
+    #btn2{
+      width:10em;
+      height:3em;
+    }
+
+    .btn22{
+      padding: 2%;
+    }
+
+    .text , .lest , .list , .contact , .textcols, .text123{
+      font-size: 1.2em;
+    }
+
+    .textcols{
+      font-size: 2.2em;
+    }
+
+    #figure{
+      width:20em;
+      height: 20em;
+    }
+    .list , .lest, .text , .textcols, .contact{
+      margin-left: 2%;
+    }
+
+    .line{
+      height:24em;
+      margin-left:1%;
+      top: 14em;
+    }
+
+    .lune{
+      height:19em;
+      margin-left:1%;
+      top: 14em;
+    }
+
+  }
+
+  @media screen and (orientation:portrait){
+    .container{
+      height:100%;
+      max-width:1600px;
+    }
+
+    .bt{
+      width:100%;
+      height:20%;
+    }
+    
+    .text123{
+      padding: 5%;
+      font-size: 2.2em;
+    }
+
+    .image{
+      padding: 10%;
+      height:35em;
+      width:100%;
+    }
+    #img{
+      width: 60%;
+    }
+
+    #img1{
+      width:20em;
+    }
+
+    #btn2{
+      font-size:2em;
+      width:10em;
+      height:3em;
+    }
+
+    .btn22{
+      padding: 5%;
+    }
+
+    .text , .lest  {
+      font-size: 2.3em;
+    }
+
+    .list , .contact{
+      font-size: 2em;
+    }
+
+    .textcols{
+      font-size: 2.6em;
+    }
+
+    #figure{
+      width:30em;
+      height: 30em;
+    }
+
+    .list , .lest , .text, .textcols , .contact{
+      margin-left: 4%;
+    }
+
+    .line{
+      height:48em;
+      margin-left:2%;
+      top: 20em;
+    }
+
+    .lune{
+      height:33em;
+      margin-left:2%;
+      top: 20em;
+    }
+
+
+  }
